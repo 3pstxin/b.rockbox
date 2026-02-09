@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rockbox Winamp</string>
+    <string name="loading_skin">Loading skin...</string>
+    <string name="no_tracks">No tracks in playlist</string>
+    <string name="playing">Playing</string>
+    <string name="paused">Paused</string>
+    <string name="stopped">Stopped</string>
+</resources>

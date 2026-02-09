@@ -1,0 +1,40 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.rockbox.winamp"
+        minSdkVersion 16  // Android 4.1 Jelly Bean
+        targetSdkVersion 19  // Android 4.4 KitKat (BB10 compatibility)
+        versionCode 1
+        versionName "1.0.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    // No external dependencies for MVP
+    // Pure Android SDK only
+}
